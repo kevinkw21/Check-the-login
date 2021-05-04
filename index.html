@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Check The Login</p>
+  <script>
+//1.Write the code which asks for a login with prompt.
+let userName = prompt("Who's there?", '');
+//2.If the visitor enters "Admin", 
+if (userName === 'Admin') {
+//3.then prompt for a password
+  let pass = prompt('Password?', '');
+//6.If it equals “TheMaster”, then show “Welcome!”,
+  if (pass === 'TheMaster') {
+    alert( 'Welcome!' );
+//8.For an empty string or cancelled input, show “Canceled”
+  } else if (pass === '' || pass === null) {
+    alert( 'Canceled' );
+//7.Another string – show “Wrong password”,
+  } else {
+    alert( 'Wrong password' );
+  }
+ //4.if the input is an empty line or Esc – show “Canceled”
+} else if (userName === '' || userName === null) {
+  alert( 'Canceled' );
+//5.if it’s another string – then show “I don’t know you”.
+} else {
+  alert( "I don't know you" );
+}
+
+
+
+  </script>
+</body>
+
+</html>
+
+
+
+
+
+
+//let pass = "TheMaster";
+if (pass == 'TheMaster'){
+  alert('Welcome!')
+} else if(pass != 'TheMaster') {
+alert("Wrong password!")
+}//
+
